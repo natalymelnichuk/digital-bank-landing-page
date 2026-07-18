@@ -82,9 +82,10 @@ $very-light-gray: hsl(0, 0%, 98%);
 
 
 @media (min-width: 992px) {
-    .container {
-        max-width: 100%;
+    .navbar-nav {
+        width: 50%;
     }
+
     .navbar-collapse {
         position: static;
         padding: 0;
