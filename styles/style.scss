@@ -18,9 +18,12 @@ $very-light-gray: hsl(0, 0%, 98%);
     position: fixed;
     z-index: 20;
     height: 5em;
+    width: 100%;
     background-color: white;
     transition: all 0.3s ease;
     font-family: "Public Sans", sans-serif;
+    right: 0 !important;
+    transform: none !important;
 }
 
 .navbar-collapse {
