@@ -16,7 +16,6 @@ $very-light-gray: hsl(0, 0%, 98%);
 
 .navbar {
     position: fixed;
-    width: 100vw;
     z-index: 20;
     height: 5em;
     background-color: white;
@@ -71,7 +70,7 @@ $very-light-gray: hsl(0, 0%, 98%);
 .nav-main-btn {
     @include gradient;
     border-radius: 2em;
-    padding: 0.5em 1.5em;
+    padding: 1em 2.5em;
     color: white;
     border: none;
 
@@ -121,12 +120,13 @@ $very-light-gray: hsl(0, 0%, 98%);
 
     .hero-title {
         color: $dark-blue;
-        font-size: 2.5em;
+        font-size: 3em;
+        font-weight: 300;
         margin-bottom: 1em;
     }
 
     .hero-text {
-        font-size: 1em;
+        font-size: 1.1em;
         color: $dark-gray;
         margin-bottom: 2em;
     }
@@ -135,15 +135,88 @@ $very-light-gray: hsl(0, 0%, 98%);
 .hero-img-block {
     background-image: url('../images/bg-intro-mobile.svg');
     background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    margin-top: -5em; 
+    background-position: right top;
+    background-size: 115%;
+    margin-top: -5.5em; 
     display: flex;
     justify-content: center;
 }
 
+.services {
+    font-family: "Public Sans", sans-serif;
+    background-color: white;
+}
+
+.service img {
+    height: 100px;
+}
+
+.services h2 {
+    color: $dark-blue;
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-bottom: 0.5em;
+}
+
+.services h3 {
+    color: $dark-blue;
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.articles {
+    background-color: $very-light-gray;
+}
+
+.services p {
+    font-size: 1.1em;
+    color: $dark-gray;
+    margin-bottom: 2em;
+}
+
+.articles h2 {
+    color: $dark-blue;
+    font-size: 2.5em;
+    font-weight: 300;
+}
+
+.card {
+    width: 90%;
+    font-family: "Public Sans", sans-serif;
+    border: none;
+}
+
+.card-subtitle {
+    font-size: 0.9em;
+    color: $dark-gray;
+    margin: 1.5em 0;
+
+}
+
+.card-title {
+    color: $dark-blue;
+    font-size: 1.5em;
+    font-weight: 300;
+}
+
+.card-text {
+    font-size: 1.4em;
+    color: $dark-gray;
+    margin: 1.5em 0;
+}
+
 footer {
     background-color: $dark-blue;
+}
+
+footer a {
+    color: $light-gray;
+    text-decoration: none;
+}
+
+footer p {
+    color: $light-gray;
 }
 
 
@@ -208,11 +281,11 @@ footer {
         clip-path: inset(-50px 5vw -200px 0px);
     }
 
-    .section {
+    .services {
         position: relative;
         z-index: 1;
         background-color: $light-gray;
         margin-top: -5em;
-        padding-top: 8em;
+        padding-top: 5em;
     }
 }
