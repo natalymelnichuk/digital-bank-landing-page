@@ -6,9 +6,12 @@
   position: fixed;
   z-index: 20;
   height: 5em;
+  width: 100%;
   background-color: white;
   transition: all 0.3s ease;
   font-family: "Public Sans", sans-serif;
+  right: 0 !important;
+  transform: none !important;
 }
 
 .navbar-collapse {
@@ -204,7 +207,7 @@ footer p {
   padding: 0.5em;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .container-xl {
     max-width: none !important;
     width: 100vw;
