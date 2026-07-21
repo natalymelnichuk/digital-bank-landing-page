@@ -1,5 +1,5 @@
-.container-xxl {
-  width: 100%;
+.container-xl {
+  width: 100vw !important;
 }
 
 .navbar {
@@ -159,6 +159,11 @@
   border: none;
 }
 
+.card-img-top {
+  width: 100%;
+  height: 15em;
+}
+
 .card-subtitle {
   font-size: 0.9em;
   color: hsl(233, 8%, 62%);
@@ -172,9 +177,14 @@
 }
 
 .card-text {
-  font-size: 1.4em;
+  font-size: 1.2em;
   color: hsl(233, 8%, 62%);
   margin: 1.5em 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  overflow: hidden;
 }
 
 footer {
@@ -190,10 +200,17 @@ footer p {
   color: hsl(220, 16%, 96%);
 }
 
+.footer-section li {
+  padding: 0.5em;
+}
+
 @media (min-width: 992px) {
-  .container-xxl {
-    width: 100%;
+  .container-xl {
+    max-width: none !important;
+    width: 100vw;
     padding: 0;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
   .navbar {
     height: 5em;
@@ -228,17 +245,16 @@ footer p {
     margin-top: -5em;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: end;
   }
   .mockups-wrapper {
-    width: 100%;
     overflow: hidden;
   }
   .hero-mockups {
     position: relative;
     z-index: 10;
     max-width: none;
-    clip-path: inset(-50px 5vw -200px 0px);
+    clip-path: inset(-50px 40px -200px 0px);
   }
   .services {
     position: relative;
@@ -246,5 +262,16 @@ footer p {
     background-color: hsl(220, 16%, 96%);
     margin-top: -5em;
     padding-top: 5em;
+  }
+  .card-text {
+    font-size: 1.2em;
+    color: hsl(233, 8%, 62%);
+    margin: 1.5em 0;
+  }
+  footer li {
+    width: 50%;
+  }
+  .footer-section {
+    height: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
